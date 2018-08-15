@@ -18,7 +18,6 @@ public:
     spooftool(){}
     spooftool(char *interface, char *senderip, char *destip);
     void keep_spoofing();
-    void packet_relay();
 };
 
 #endif // SPOOFTOOL_H
