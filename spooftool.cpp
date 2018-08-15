@@ -126,25 +126,5 @@ void spooftool::keep_spoofing()
 
 
 
-    //detect and poisoning
-}
-
-
-void spooftool::packet_relay()
-{
-    int res;
-    const u_char *ubuf;
-    struct pcap_pkthdr *header;
-
-
-    while(1)
-    {
-         pcap_next_ex(hPcap,&header,&ubuf);
-         pcap_sendpacket(hPcap,ubuf,1024);
-    }
-
-
-
-
 
 }
